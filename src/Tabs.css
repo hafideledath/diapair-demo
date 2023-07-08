@@ -46,7 +46,6 @@
 
 .tab-highlight.dream {
     left: 0;
-    transform: none;
 }
 
 .tab-highlight.inspire {
@@ -55,7 +54,6 @@
 
 .tab-highlight.achieve {
     left: calc(100% - 180px);
-    transform: none;
 }
 
 .content {
@@ -65,4 +63,60 @@
     height: 300px;
     box-sizing: border-box;
     border-radius: 15px;
+}
+
+@media (max-width: 700px) {
+    .content, .tab-headers {
+        width: 450px;
+    }
+
+    .tab-headers {
+        font-size: 1.75rem;
+    }
+
+    .tab-highlight {
+        width: 130px;
+    }
+
+    .content {
+        font-size: 1.3rem;
+    }
+
+    .tab-highlight.inspire {
+        left: calc(47% - 65px);
+    }
+    
+    .tab-highlight.achieve {
+        left: calc(100% - 130px);
+    }
+}
+
+@media (max-width: 490px) {
+    .tab-highlight {
+        display: none;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .green {
+        color: #D9D9D9;
+    }
+
+    .tab-headers {
+        max-width: 320px;
+        font-size: 1.5rem;
+    }
+
+    .tab-headers a:not(.green) {
+        opacity: 0.5;
+    }
+
+    .content {
+        max-width: 300px;
+        margin-top: 10px;
+        font-size: 1rem;
+        padding: 20px;
+    }
 }

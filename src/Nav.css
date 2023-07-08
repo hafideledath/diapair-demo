@@ -1,6 +1,7 @@
 nav {
   color: #004F1F;
   height: 140px;
+  position: relative;
 }
 
 nav::before, nav::after {
@@ -30,6 +31,15 @@ nav::after {
 
 nav * {
   z-index: 1;
+}
+
+nav a {
+  opacity: 0.8;
+  transition-duration: .2s;
+}
+
+nav a:hover {
+  opacity: 1;
 }
 
 nav a:not(:last-of-type) {
