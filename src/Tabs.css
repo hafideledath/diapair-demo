@@ -1,0 +1,68 @@
+.tab-headers {
+    color: #D9D9D9;
+    width: 600px;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.tab-headers a {
+    height: 80px;
+    box-sizing: border-box;
+    transition-duration: .5s;
+}
+
+.green {
+    color: #004F1F;
+    position: relative;
+}
+
+.tab-highlight {
+    background-color: #D9D9D9;
+    height: 80px;
+    width: 180px;
+    position: absolute;
+    border-radius: 15px 15px 0 0;
+    transition-duration: .25s;
+}
+
+.tab-highlight::before, .tab-highlight::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    height: 50px;
+    width: 25px;
+    box-shadow: 0 25px 0 0 #D9D9D9;
+}
+
+.tab-highlight::before {
+    right: -25px;
+    border-bottom-left-radius: 25px;
+}
+
+.tab-highlight::after {
+    left: -25px;
+    border-bottom-right-radius: 25px;
+}
+
+.tab-highlight.dream {
+    left: 0;
+    transform: none;
+}
+
+.tab-highlight.inspire {
+    left: calc(47% - 90px);
+}
+
+.tab-highlight.achieve {
+    left: calc(100% - 180px);
+    transform: none;
+}
+
+.content {
+    background-color: #D9D9D9;
+    width: 600px;
+    margin: -15px auto 0;
+    height: 300px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
