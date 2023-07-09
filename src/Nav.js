@@ -4,13 +4,13 @@ import 'firebase/compat/auth';
 import './Nav.css';
 
 firebase.initializeApp({
-  apiKey: "AIzaSyDJ3M1axgd31Fd5Hz4rlqvzC2lWEtq7rEA",
-  authDomain: "discoverdubai-1de93.firebaseapp.com",
-  projectId: "discoverdubai-1de93",
-  storageBucket: "discoverdubai-1de93.appspot.com",
-  messagingSenderId: "59761132",
-  appId: "1:59761132:web:4b2f5081964b9c418120c9",
-  measurementId: "G-HL3K1T4G3F"
+  apiKey: "AIzaSyDpETp0HlzsGkQcLgTyUFfPkbBdaR5zyRY",
+  authDomain: "diapair-demo.firebaseapp.com",
+  projectId: "diapair-demo",
+  storageBucket: "diapair-demo.appspot.com",
+  messagingSenderId: "1074670504402",
+  appId: "1:1074670504402:web:92c99aaf0fbd75e38fe00b",
+  measurementId: "G-55RS492BRM"
 })
 
 const auth = firebase.auth();
