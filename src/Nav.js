@@ -13,9 +13,7 @@ firebase.initializeApp({
   measurementId: "G-55RS492BRM"
 })
 
-const auth = firebase.auth();
-
-function Nav() {
+const Nav = ({ auth }) => {
   return (
     <div className="Nav">
       <nav className='flex justify-end pr-20 pt-10 text-2xl lg:text-3xl align-middle content-box'>

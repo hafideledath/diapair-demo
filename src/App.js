@@ -32,17 +32,18 @@ function App() {
   }
 
   return (
-    user ? ServeApp() : <SignIn />
+    user ? ServeApp(user.displayName) : <SignIn />
   );
 }
 
-function ServeApp() {
+function ServeApp(username) {
+
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
-        <Nav />
+        <Nav auth={auth} />
         <Routes>
-          <Route path="/" Component={Dashboard} />
+          <Route path="/" Component={() => <Dashboard displayName={username} />} />
           <Route path="/about" Component={About} />
         </Routes>
         <footer className='w-screen text-center font-thin text-sm mb-2 mt-20'>©2023 DIAPAIR | Contact</footer>

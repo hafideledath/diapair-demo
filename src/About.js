@@ -1,5 +1,4 @@
 import './About.css';
-import Nav from './Nav'
 import Tabs from './Tabs'
 
 function About() {
