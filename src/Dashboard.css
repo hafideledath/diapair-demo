@@ -1,0 +1,13 @@
+.module {
+    background-color: #EDEDEDEF;
+    box-shadow: 4px 4px #004F1F;
+    transition-duration: .2s;
+}
+
+.module:hover {
+    box-shadow: 6px 6px #004F1F;
+}
+
+.w-5\/4 {
+    max-width: 125%;
+}

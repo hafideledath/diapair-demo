@@ -32,7 +32,7 @@ function Tabs() {
 
   return (
     <div className="Tabs">
-        <div className='flex tab-headers items-center mx-auto mt-20 relative overflow-hidden'>
+        <div className='flex tab-headers items-center mx-auto relative overflow-hidden'>
           <div className={"tab-highlight " + position}></div>
           <a href="#" className={focus[0] + " ml-5 mr-auto"} onClick={() => changeTab(0)}>Dream</a>
           <a href="#" className={focus[1]} onClick={() => changeTab(1)}>Inspire</a>

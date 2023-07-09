@@ -4,14 +4,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800;900');
 
-html, body, #root, .App {
+html,
+body,
+#root,
+.App {
   height: 100%;
   width: 100vw;
   overflow-x: hidden;
 }
 
 body {
+  --s: 125px;
+  --c1: #1f1f1f;
+  --c2: #141414;
+  --c3: #171717;
+  background:
+    conic-gradient(from 15deg at 86.6%,
+      var(--c3) 25%, var(--c2) 0 150deg, #0000 0),
+    conic-gradient(from -75deg at 50% 13.39%,
+      var(--c1) 60deg, var(--c3) 0 150deg,
+      var(--c2) 0 210deg, #0000 0),
+    conic-gradient(from 15deg at 36.6% 63.4%,
+      var(--c1) 60deg, var(--c3) 0 150deg,
+      var(--c1) 0 210deg, var(--c2) 0 75%, var(--c3) 0);
+  background-size: var(--s) var(--s);
   margin: 0;
   font-family: 'Inconsolata', monospace;
-  background-color: #272727;
+
 }
