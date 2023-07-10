@@ -34,3 +34,7 @@
 .sign-in:hover {
     transform: translate(-50%, -50%) scale(1.05);
 }
+
+footer {
+    color: #EBEBEBAE;
+}

@@ -1,17 +1,4 @@
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
-
 import './Nav.css';
-
-firebase.initializeApp({
-  apiKey: "AIzaSyDpETp0HlzsGkQcLgTyUFfPkbBdaR5zyRY",
-  authDomain: "diapair-demo.firebaseapp.com",
-  projectId: "diapair-demo",
-  storageBucket: "diapair-demo.appspot.com",
-  messagingSenderId: "1074670504402",
-  appId: "1:1074670504402:web:92c99aaf0fbd75e38fe00b",
-  measurementId: "G-55RS492BRM"
-})
 
 const Nav = ({ auth }) => {
   return (
@@ -22,6 +9,7 @@ const Nav = ({ auth }) => {
           <h3 className='text-xl lg:text-2xl lg:leading-3'>Student Connect</h3>
         </div>
         <a href="/">Dashboard</a>
+        <a href="/chat">Chat</a>
         <a href="/about">About</a>
         <a href="#" className='sign-out px-2.5 py-1 rounded-lg text-xl lg:text-2xl h-10' onClick={() => auth.signOut()}>Sign Out</a>
       </nav>

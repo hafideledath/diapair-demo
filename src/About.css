@@ -24,10 +24,6 @@ h6 {
     text-shadow: 4px 4px 0 #004F1F;
 }
 
-footer {
-    color: #EBEBEBAE;
-}
-
 @media (max-width: 925px) {
     .info-container {
         flex-direction: column;

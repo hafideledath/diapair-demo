@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Nav from './Nav'
 import Dashboard from './Dashboard';
+import Chat from './Chat'
 import About from './About';
 
 import firebase from 'firebase/compat/app';
@@ -44,9 +45,10 @@ function ServeApp(username) {
         <Nav auth={auth} />
         <Routes>
           <Route path="/" Component={() => <Dashboard displayName={username} />} />
+          <Route path="/chat" Component={() => <Chat firebase={firebase} />} />
           <Route path="/about" Component={About} />
         </Routes>
-        <footer className='w-screen text-center font-thin text-sm mb-2 mt-20'>©2023 DIAPAIR | Contact</footer>
+        <footer className='w-screen text-center font-thin text-sm absolute bottom-2'>©2023 DIAPAIR | Contact</footer>
       </div>
     </BrowserRouter>
   );
