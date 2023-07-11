@@ -14,7 +14,7 @@ const Dashboard = ({ displayName }) => {
         </div>
         <div className="rounded-xl module w-5/4 p-6 border-box max-h-[250px] overflow-hidden">
           <p className='sm:text-xl lg:text-2xl text-ellipses'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <div className="flex">
+          <div className="flex flex-wrap">
             <div className="tag">Compsci</div>
             <div className="tag">Art</div>
             <div className="tag">Linguistics</div>
@@ -29,7 +29,7 @@ const Dashboard = ({ displayName }) => {
       <div className="flex gap-4 w-screen h-min sm:px-5 md:px-20 lg:px-40 border-box mb-5 paired-with">
       <div className="rounded-xl module w-5/4 p-6 border-box max-h-[250px] overflow-hidden">
           <p className='sm:text-xl lg:text-2xl text-ellipses'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <div className="flex">
+          <div className="flex flex-wrap">
             <div className="tag">Compsci</div>
             <div className="tag">ML</div>
             <div className="tag">Photography</div>
