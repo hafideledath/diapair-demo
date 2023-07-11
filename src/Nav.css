@@ -36,6 +36,11 @@ nav * {
 nav a {
   opacity: 0.8;
   transition-duration: .2s;
+  height: 2.2rem;
+}
+
+nav a.active {
+  border-bottom: 2px dashed #004F1FAE;
 }
 
 nav a:hover {
