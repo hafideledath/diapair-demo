@@ -11,3 +11,28 @@
 .w-5\/4 {
     max-width: 125%;
 }
+
+.paired-with .module {
+    background-color: #04A161;
+    color: #EDEDED;
+}
+
+.flex>.tag {
+    margin-top: 10px;
+}
+
+.tag {
+    padding: 4px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.user .tag {
+    background-color: #04A161EF;
+    color: #EDEDED;
+}
+
+.paired-with .tag {
+    background-color: #EDEDEDEF;
+    color: #000000;
+}
